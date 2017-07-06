@@ -17,7 +17,9 @@ import cn.handle.bean.vo.IocomotiveCarChangeContactVo;
 import cn.handle.bean.vo.IocomotiveCarReplaceVo;
 import cn.handle.bean.vo.RenewalDriverLicenseVo;
 import cn.handle.bean.vo.RepairOrReplaceDriverLicenseVo;
+import cn.handle.bean.vo.ReplaceMotorVehicleLicensePlateVo;
 import cn.handle.bean.vo.VehicleDrivingLicenseVo;
+import cn.sdk.bean.BaseBean;
 
 
 
@@ -132,6 +134,7 @@ public interface IHandleService {
 	 * @return
 	 */
 	public Map<String, String> inspectionDeclarationQuery(String identityCard,String sourceOfCertification) throws Exception;
+
 	/**
 	 * 机动车六年免检预约信息写入
 	 * @param map
@@ -160,4 +163,13 @@ public interface IHandleService {
 	 * @throws Exception
 	 */
 	public JSONObject getVehicleInspection(LinkedHashMap<String, Object> map) throws Exception;
+	
+	/**
+	 * 补领机动车号牌
+	 * @param vo 补领机动车号牌 申请信息
+	 * @return
+	 * @throws Exception
+	 */
+	public BaseBean replaceMotorVehicleLicensePlate(ReplaceMotorVehicleLicensePlateVo vo)throws Exception;
+
 }
