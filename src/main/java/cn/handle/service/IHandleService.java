@@ -1,6 +1,9 @@
 package cn.handle.service;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
+
+import com.alibaba.fastjson.JSONObject;
 
 import cn.handle.bean.vo.ApplyCarTemporaryLicenceVo;
 import cn.handle.bean.vo.ApplyGatePassVo;
@@ -129,4 +132,32 @@ public interface IHandleService {
 	 * @return
 	 */
 	public Map<String, String> inspectionDeclarationQuery(String identityCard,String sourceOfCertification) throws Exception;
+	/**
+	 * 机动车六年免检预约信息写入
+	 * @param map
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject createVehicleInspection(LinkedHashMap<String, Object> map)throws Exception;
+	/**
+	 * 获取车辆类型列表
+	 * @param map
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject getCarTypes(LinkedHashMap<String, Object> map) throws Exception;
+	/**
+	 * 取消机动车六年免检预约
+	 * @param map
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject cancelVehicleInspection(LinkedHashMap<String, Object> map) throws Exception;
+	/**
+	 * 获取机动车六年免检预约信息
+	 * @param map
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject getVehicleInspection(LinkedHashMap<String, Object> map) throws Exception;
 }
