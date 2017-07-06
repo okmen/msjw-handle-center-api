@@ -12,7 +12,7 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	
 	private String name; //车主姓名
 	private String identificationNo; //证件种类
-	private String identityCard; //证件号码
+	private String identificationNum; //证件号码
 	private String numberPlate; //号牌号码
 	private String plateType; //号牌种类
 	private String placeOfDomicile; //户籍所在地
@@ -36,11 +36,11 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	public void setIdentificationNo(String identificationNo) {
 		this.identificationNo = identificationNo;
 	}
-	public String getIdentityCard() {
-		return identityCard;
+	public String getIdentificationNum() {
+		return identificationNum;
 	}
-	public void setIdentityCard(String identityCard) {
-		this.identityCard = identityCard;
+	public void setIdentificationNum(String identificationNum) {
+		this.identificationNum = identificationNum;
 	}
 	public String getNumberPlate() {
 		return numberPlate;
@@ -111,11 +111,12 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	@Override
 	public String toString() {
 		return "IocomotiveCarChangeContactVo [name=" + name + ", identificationNo=" + identificationNo
-				+ ", identityCard=" + identityCard + ", numberPlate=" + numberPlate + ", plateType=" + plateType
-				+ ", placeOfDomicile=" + placeOfDomicile + ", behindTheFrame4Digits=" + behindTheFrame4Digits
-				+ ", mobilephone=" + mobilephone + ", receiverAddress=" + receiverAddress + ", PHOTO9=" + PHOTO9
-				+ ", PHOTO10=" + PHOTO10 + ", JDCXSZ=" + JDCXSZ + ", ip=" + ip + ", sourceOfCertification="
-				+ sourceOfCertification + "]";
+				+ ", identificationNum=" + identificationNum + ", numberPlate=" + numberPlate + ", plateType="
+				+ plateType + ", placeOfDomicile=" + placeOfDomicile + ", behindTheFrame4Digits="
+				+ behindTheFrame4Digits + ", mobilephone=" + mobilephone + ", receiverAddress=" + receiverAddress
+				+ ", PHOTO9=" + PHOTO9 + ", PHOTO10=" + PHOTO10 + ", JDCXSZ=" + JDCXSZ + ", ip=" + ip
+				+ ", sourceOfCertification=" + sourceOfCertification + "]";
 	}
+	
 	
 }
