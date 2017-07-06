@@ -11,7 +11,7 @@ public class IocomotiveCarReplaceVo implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String name;					//	车主姓名
-	private String carOwnerIdentityCard;					//	证件号码
+	private String identificationNum;					//	证件号码
 	private String numberPlate;			//	号牌号码
 	private String plateType;		//	号牌种类
 	private String placeOfDomicile;			//	户籍所在地
@@ -32,11 +32,11 @@ public class IocomotiveCarReplaceVo implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCarOwnerIdentityCard() {
-		return carOwnerIdentityCard;
+	public String getIdentificationNum() {
+		return identificationNum;
 	}
-	public void setCarOwnerIdentityCard(String carOwnerIdentityCard) {
-		this.carOwnerIdentityCard = carOwnerIdentityCard;
+	public void setIdentificationNum(String identificationNum) {
+		this.identificationNum = identificationNum;
 	}
 	public String getNumberPlate() {
 		return numberPlate;
@@ -124,12 +124,13 @@ public class IocomotiveCarReplaceVo implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return "IocomotiveCarReplaceVo [name=" + name + ", carOwnerIdentityCard=" + carOwnerIdentityCard
-				+ ", numberPlate=" + numberPlate + ", plateType=" + plateType + ", placeOfDomicile=" + placeOfDomicile
-				+ ", address=" + address + ", receiverName=" + receiverName + ", receiverNumber=" + receiverNumber
+		return "IocomotiveCarReplaceVo [name=" + name + ", identificationNum=" + identificationNum + ", numberPlate="
+				+ numberPlate + ", plateType=" + plateType + ", placeOfDomicile=" + placeOfDomicile + ", address="
+				+ address + ", receiverName=" + receiverName + ", receiverNumber=" + receiverNumber
 				+ ", receiverAddress=" + receiverAddress + ", JZZA=" + JZZA + ", JZZB=" + JZZB + ", PHOTO9=" + PHOTO9
 				+ ", PHOTO10=" + PHOTO10 + ", DJZSFYJ=" + DJZSFYJ + ", ip=" + ip + ", sourceOfCertification="
 				+ sourceOfCertification + "]";
 	}
+	
 	
 }
