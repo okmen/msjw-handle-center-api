@@ -28,9 +28,6 @@ public interface IHandleService {
 	public Map<String, String> driverLicenseAnnualVerification(
 			DriverLicenseAnnualVerificationVo driverLicenseAnnualVerificationVo)  throws Exception;
 	
-	
-	
-	
 	/**
 	 * 驾驶证延期换证
 	 * @param renewalDriverLicenseVo
