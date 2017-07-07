@@ -14,7 +14,7 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	private String identificationNO; //证件种类
 	private String identificationNum; //证件号码
 	private String numberPlate; //号牌号码
-	private String plateType; //号牌种类
+	private String cartype; //车辆类型
 	private String placeOfDomicile; //户籍所在地
 	private String behindTheFrame4Digits; //车架号
 	private String mobilephone; //变更号码
@@ -48,11 +48,11 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	public void setNumberPlate(String numberPlate) {
 		this.numberPlate = numberPlate;
 	}
-	public String getPlateType() {
-		return plateType;
+	public String getCartype() {
+		return cartype;
 	}
-	public void setPlateType(String plateType) {
-		this.plateType = plateType;
+	public void setCartype(String cartype) {
+		this.cartype = cartype;
 	}
 	public String getPlaceOfDomicile() {
 		return placeOfDomicile;
@@ -111,11 +111,11 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	@Override
 	public String toString() {
 		return "IocomotiveCarChangeContactVo [name=" + name + ", identificationNO=" + identificationNO
-				+ ", identificationNum=" + identificationNum + ", numberPlate=" + numberPlate + ", plateType="
-				+ plateType + ", placeOfDomicile=" + placeOfDomicile + ", behindTheFrame4Digits="
-				+ behindTheFrame4Digits + ", mobilephone=" + mobilephone + ", receiverAddress=" + receiverAddress
-				+ ", PHOTO9=" + PHOTO9 + ", PHOTO10=" + PHOTO10 + ", JDCXSZ=" + JDCXSZ + ", ip=" + ip
-				+ ", sourceOfCertification=" + sourceOfCertification + "]";
+				+ ", identificationNum=" + identificationNum + ", numberPlate=" + numberPlate + ", cartype=" + cartype
+				+ ", placeOfDomicile=" + placeOfDomicile + ", behindTheFrame4Digits=" + behindTheFrame4Digits
+				+ ", mobilephone=" + mobilephone + ", receiverAddress=" + receiverAddress + ", PHOTO9=" + PHOTO9
+				+ ", PHOTO10=" + PHOTO10 + ", JDCXSZ=" + JDCXSZ + ", ip=" + ip + ", sourceOfCertification="
+				+ sourceOfCertification + "]";
 	}
 	
 }

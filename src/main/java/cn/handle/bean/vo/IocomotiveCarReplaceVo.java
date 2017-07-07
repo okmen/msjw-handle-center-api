@@ -13,7 +13,7 @@ public class IocomotiveCarReplaceVo implements Serializable{
 	private String name;					//	车主姓名
 	private String identificationNum;					//	证件号码
 	private String numberPlate;			//	号牌号码
-	private String plateType;		//	号牌种类
+	private String cartype;		//	车辆类型
 	private String placeOfDomicile;			//	户籍所在地
 	private String address;					//	住所详细地址
 	private String receiverName;			//	收件人姓名
@@ -44,11 +44,11 @@ public class IocomotiveCarReplaceVo implements Serializable{
 	public void setNumberPlate(String numberPlate) {
 		this.numberPlate = numberPlate;
 	}
-	public String getPlateType() {
-		return plateType;
+	public String getCartype() {
+		return cartype;
 	}
-	public void setPlateType(String plateType) {
-		this.plateType = plateType;
+	public void setCartype(String cartype) {
+		this.cartype = cartype;
 	}
 	public String getPlaceOfDomicile() {
 		return placeOfDomicile;
@@ -125,11 +125,10 @@ public class IocomotiveCarReplaceVo implements Serializable{
 	@Override
 	public String toString() {
 		return "IocomotiveCarReplaceVo [name=" + name + ", identificationNum=" + identificationNum + ", numberPlate="
-				+ numberPlate + ", plateType=" + plateType + ", placeOfDomicile=" + placeOfDomicile + ", address="
-				+ address + ", receiverName=" + receiverName + ", receiverNumber=" + receiverNumber
-				+ ", receiverAddress=" + receiverAddress + ", JZZA=" + JZZA + ", JZZB=" + JZZB + ", PHOTO9=" + PHOTO9
-				+ ", PHOTO10=" + PHOTO10 + ", DJZSFYJ=" + DJZSFYJ + ", ip=" + ip + ", sourceOfCertification="
-				+ sourceOfCertification + "]";
+				+ numberPlate + ", cartype=" + cartype + ", placeOfDomicile=" + placeOfDomicile + ", address=" + address
+				+ ", receiverName=" + receiverName + ", receiverNumber=" + receiverNumber + ", receiverAddress="
+				+ receiverAddress + ", JZZA=" + JZZA + ", JZZB=" + JZZB + ", PHOTO9=" + PHOTO9 + ", PHOTO10=" + PHOTO10
+				+ ", DJZSFYJ=" + DJZSFYJ + ", ip=" + ip + ", sourceOfCertification=" + sourceOfCertification + "]";
 	}
 	
 	
