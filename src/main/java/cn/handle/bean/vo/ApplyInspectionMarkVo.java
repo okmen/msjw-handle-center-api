@@ -23,6 +23,8 @@ public class ApplyInspectionMarkVo implements Serializable {
 	private String idCardImgPositive;
 	private String idCardImgNegative;
 	private String idCarImgTable;  //机动车登机证书
+	private String JZZA;//居住证正面
+	private String JZZB;//居住证反面
 	private String foreignersLiveTable;
 	private String ip;
 	public String getUserName() {
@@ -115,6 +117,18 @@ public class ApplyInspectionMarkVo implements Serializable {
 	}
 	public void setIdCarImgTable(String idCarImgTable) {
 		this.idCarImgTable = idCarImgTable;
+	}
+	public String getJZZA() {
+		return JZZA;
+	}
+	public void setJZZA(String jZZA) {
+		JZZA = jZZA;
+	}
+	public String getJZZB() {
+		return JZZB;
+	}
+	public void setJZZB(String jZZB) {
+		JZZB = jZZB;
 	}
 
 	
