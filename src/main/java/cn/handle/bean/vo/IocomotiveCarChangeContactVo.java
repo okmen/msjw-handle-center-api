@@ -11,7 +11,7 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String name; //车主姓名
-	private String identificationNo; //证件种类
+	private String identificationNO; //证件种类
 	private String identificationNum; //证件号码
 	private String numberPlate; //号牌号码
 	private String plateType; //号牌种类
@@ -30,11 +30,11 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getIdentificationNo() {
-		return identificationNo;
+	public String getIdentificationNO() {
+		return identificationNO;
 	}
-	public void setIdentificationNo(String identificationNo) {
-		this.identificationNo = identificationNo;
+	public void setIdentificationNO(String identificationNO) {
+		this.identificationNO = identificationNO;
 	}
 	public String getIdentificationNum() {
 		return identificationNum;
@@ -110,13 +110,12 @@ public class IocomotiveCarChangeContactVo implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return "IocomotiveCarChangeContactVo [name=" + name + ", identificationNo=" + identificationNo
+		return "IocomotiveCarChangeContactVo [name=" + name + ", identificationNO=" + identificationNO
 				+ ", identificationNum=" + identificationNum + ", numberPlate=" + numberPlate + ", plateType="
 				+ plateType + ", placeOfDomicile=" + placeOfDomicile + ", behindTheFrame4Digits="
 				+ behindTheFrame4Digits + ", mobilephone=" + mobilephone + ", receiverAddress=" + receiverAddress
 				+ ", PHOTO9=" + PHOTO9 + ", PHOTO10=" + PHOTO10 + ", JDCXSZ=" + JDCXSZ + ", ip=" + ip
 				+ ", sourceOfCertification=" + sourceOfCertification + "]";
 	}
-	
 	
 }
