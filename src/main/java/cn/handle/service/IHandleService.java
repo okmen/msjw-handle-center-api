@@ -25,6 +25,11 @@ import cn.sdk.bean.BaseBean;
 
 public interface IHandleService {
 	/**
+	 * 获取域名地址
+	 * @return
+	 */
+	public String getTemplateSendUrl();
+	/**
 	 * 驾驶证年审
 	 * @param driverLicenseAnnualVerificationVo
 	 * @return
