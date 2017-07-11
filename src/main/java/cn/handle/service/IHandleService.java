@@ -171,5 +171,14 @@ public interface IHandleService {
 	 * @throws Exception
 	 */
 	public BaseBean replaceMotorVehicleLicensePlate(ReplaceMotorVehicleLicensePlateVo vo)throws Exception;
-
+	/**
+	 * 首违免罚查询
+	 * @param numberPlate
+	 * @param plateType
+	 * @param id
+	 * @param queryType
+	 * @return
+	 * @throws Exception
+	 */
+	public Map<String, Object> getResultOfFirstIllegalImpunity(String numberPlate ,String plateType , String id ,String queryType) throws Exception;
 }
