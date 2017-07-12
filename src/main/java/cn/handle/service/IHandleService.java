@@ -185,5 +185,5 @@ public interface IHandleService {
 	 * @return
 	 * @throws Exception
 	 */
-	public Map<String, Object> getResultOfFirstIllegalImpunity(String numberPlate ,String plateType , String id ,String queryType) throws Exception;
+	public Map<String, Object> getResultOfFirstIllegalImpunity(String numberPlate ,String plateType , String illegalNumber ,String queryType) throws Exception;
 }
