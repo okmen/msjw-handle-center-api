@@ -9,6 +9,7 @@ import cn.handle.bean.vo.ApplyCarTemporaryLicenceVo;
 import cn.handle.bean.vo.ApplyGatePassVo;
 import cn.handle.bean.vo.ApplyInspectionMarkVo;
 import cn.handle.bean.vo.ApplyRemoteEntrustedBusinessVo;
+import cn.handle.bean.vo.CreateVehicleInspectionVo;
 import cn.handle.bean.vo.DriverChangeContactVo;
 import cn.handle.bean.vo.DriverLicenseAnnualVerificationVo;
 import cn.handle.bean.vo.DriverLicenseIntoVo;
@@ -146,29 +147,28 @@ public interface IHandleService {
 	 * @return
 	 * @throws Exception
 	 */
-	public JSONObject createVehicleInspection(LinkedHashMap<String, Object> map)throws Exception;
+	public BaseBean createVehicleInspection(CreateVehicleInspectionVo createVehicleInspectionVo)throws Exception;
 	/**
 	 * 获取车辆类型列表
 	 * @param map
 	 * @return
 	 * @throws Exception
 	 */
-	public JSONObject getCarTypes(LinkedHashMap<String, Object> map) throws Exception;
+	public JSONObject getCarTypes() throws Exception;
 	/**
 	 * 取消机动车六年免检预约
 	 * @param map
 	 * @return
 	 * @throws Exception
 	 */
-	public JSONObject cancelVehicleInspection(LinkedHashMap<String, Object> map) throws Exception;
+	public JSONObject cancelVehicleInspection(String bookNumber, String numberPlate) throws Exception;
 	/**
 	 * 获取机动车六年免检预约信息
 	 * @param map
 	 * @return
 	 * @throws Exception
 	 */
-	public JSONObject getVehicleInspection(LinkedHashMap<String, Object> map) throws Exception;
-	
+	public JSONObject getVehicleInspection(String bookNumber, String numberPlate, String driveLicenseNumber) throws Exception;
 	/**
 	 * 补领机动车号牌
 	 * @param vo 补领机动车号牌 申请信息
