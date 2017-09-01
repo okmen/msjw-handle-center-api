@@ -2,6 +2,8 @@ package cn.handle.bean.vo;
 
 import java.io.Serializable;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
 /**
  * 补领机动车号牌
  * @author Mbenben
