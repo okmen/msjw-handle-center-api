@@ -27,6 +27,21 @@ public class VehicleInspectionVO implements Serializable{
 	private String createDate         ;
 	private String bookState          ;
 	private String approveState       ;
+	private String approveFlag		  ;
+	private String approveInfo        ;
+	
+	public String getApproveFlag() {
+		return approveFlag;
+	}
+	public void setApproveFlag(String approveFlag) {
+		this.approveFlag = approveFlag;
+	}
+	public String getApproveInfo() {
+		return approveInfo;
+	}
+	public void setApproveInfo(String approveInfo) {
+		this.approveInfo = approveInfo;
+	}
 	public String getBookNumber() {
 		return bookNumber;
 	}
@@ -155,7 +170,9 @@ public class VehicleInspectionVO implements Serializable{
 				+ ", recipientsName=" + recipientsName + ", recipientsMobile=" + recipientsMobile + ", postAddr="
 				+ postAddr + ", appointmentTime=" + appointmentTime + ", mobile=" + mobile + ", telno=" + telno
 				+ ", effectiveDate=" + effectiveDate + ", terminationDate=" + terminationDate + ", inform=" + inform
-				+ ", createDate=" + createDate + ", bookState=" + bookState + ", approveState=" + approveState + "]";
+				+ ", createDate=" + createDate + ", bookState=" + bookState + ", approveState=" + approveState
+				+ ", approveFlag=" + approveFlag + ", approveInfo=" + approveInfo + "]";
 	}
+	
 
 }

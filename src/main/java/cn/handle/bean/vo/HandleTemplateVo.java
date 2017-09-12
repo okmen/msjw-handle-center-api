@@ -154,6 +154,17 @@ public class HandleTemplateVo implements Serializable{
 	 * 
 	 * @param type 业务类型  1-办理类，2-预约类
 	 * @param title 具体业务类型,例如 六年免检申请
+	 * @param bidDate 申办日期
+	 */
+	public HandleTemplateVo(Integer type, String title,  String bidDate) {
+		this.type = type;
+		this.title = title;
+		this.bidDate = bidDate;
+	}
+	/**
+	 * 
+	 * @param type 业务类型  1-办理类，2-预约类
+	 * @param title 具体业务类型,例如 六年免检申请
 	 * @param plateType 号牌种类
 	 * @param numberPlate 号牌号码
 	 * @param mobilephone 手机号
