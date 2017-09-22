@@ -10,6 +10,7 @@ import cn.handle.bean.vo.ApplyGatePassVo;
 import cn.handle.bean.vo.ApplyInspectionMarkVo;
 import cn.handle.bean.vo.ApplyRemoteEntrustedBusinessVo;
 import cn.handle.bean.vo.CreateVehicleInspectionVo;
+import cn.handle.bean.vo.DelegateVehiclesVo;
 import cn.handle.bean.vo.DriverChangeContactVo;
 import cn.handle.bean.vo.DriverLicenseAnnualVerificationVo;
 import cn.handle.bean.vo.DriverLicenseIntoVo;
@@ -186,4 +187,11 @@ public interface IHandleService {
 	 * @throws Exception
 	 */
 	public Map<String, Object> getResultOfFirstIllegalImpunity(String numberPlate ,String plateType , String illegalNumber ,String queryType) throws Exception;
+	/**
+	 * 车管电子委托机动车
+	 * @param delegateVehiclesVo
+	 * @return
+	 * @throws Exception
+	 */
+	public BaseBean electronicDelegateVehicles(DelegateVehiclesVo delegateVehiclesVo)throws Exception;
 }
