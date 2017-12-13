@@ -32,6 +32,11 @@ public interface IHandleService {
 	 */
 	public String getTemplateSendUrl();
 	/**
+	 * 获取msjw域名地址
+	 * @return
+	 */
+	public String getMsjwTemplateSendUrl();
+	/**
 	 * 驾驶证年审
 	 * @param driverLicenseAnnualVerificationVo
 	 * @return
