@@ -1,6 +1,5 @@
 package cn.handle.service;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
@@ -36,6 +35,11 @@ public interface IHandleService {
 	 * @return
 	 */
 	public String getMsjwTemplateSendUrl();
+	/**
+	 * 获取msjw办理模板id
+	 * @return
+	 */
+	public String getMsjwHandleTemplateId();
 	/**
 	 * 驾驶证年审
 	 * @param driverLicenseAnnualVerificationVo
