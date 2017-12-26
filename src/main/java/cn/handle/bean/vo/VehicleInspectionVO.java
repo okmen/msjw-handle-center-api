@@ -8,8 +8,8 @@ public class VehicleInspectionVO implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	private String bookNumber         ;
-	private String organizationName   ;
-	private String businessTypeName   ;
+	private String organization       ;
+	private String businessType       ;
 	private String name               ;
 	private String platNumber         ;
 	private String personType         ;
@@ -48,17 +48,17 @@ public class VehicleInspectionVO implements Serializable{
 	public void setBookNumber(String bookNumber) {
 		this.bookNumber = bookNumber;
 	}
-	public String getOrganizationName() {
-		return organizationName;
+	public String getOrganization() {
+		return organization;
 	}
-	public void setOrganizationName(String organizationName) {
-		this.organizationName = organizationName;
+	public void setOrganization(String organization) {
+		this.organization = organization;
 	}
-	public String getBusinessTypeName() {
-		return businessTypeName;
+	public String getBusinessType() {
+		return businessType;
 	}
-	public void setBusinessTypeName(String businessTypeName) {
-		this.businessTypeName = businessTypeName;
+	public void setBusinessType(String businessType) {
+		this.businessType = businessType;
 	}
 	public String getName() {
 		return name;
@@ -164,11 +164,11 @@ public class VehicleInspectionVO implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return "VehicleInspectionVO [bookNumber=" + bookNumber + ", organizationName=" + organizationName
-				+ ", businessTypeName=" + businessTypeName + ", name=" + name + ", platNumber=" + platNumber
-				+ ", personType=" + personType + ", driveLicenseNumber=" + driveLicenseNumber + ", postCode=" + postCode
-				+ ", recipientsName=" + recipientsName + ", recipientsMobile=" + recipientsMobile + ", postAddr="
-				+ postAddr + ", appointmentTime=" + appointmentTime + ", mobile=" + mobile + ", telno=" + telno
+		return "VehicleInspectionVO [bookNumber=" + bookNumber + ", organization=" + organization + ", businessType="
+				+ businessType + ", name=" + name + ", platNumber=" + platNumber + ", personType=" + personType
+				+ ", driveLicenseNumber=" + driveLicenseNumber + ", postCode=" + postCode + ", recipientsName="
+				+ recipientsName + ", recipientsMobile=" + recipientsMobile + ", postAddr=" + postAddr
+				+ ", appointmentTime=" + appointmentTime + ", mobile=" + mobile + ", telno=" + telno
 				+ ", effectiveDate=" + effectiveDate + ", terminationDate=" + terminationDate + ", inform=" + inform
 				+ ", createDate=" + createDate + ", bookState=" + bookState + ", approveState=" + approveState
 				+ ", approveFlag=" + approveFlag + ", approveInfo=" + approveInfo + "]";

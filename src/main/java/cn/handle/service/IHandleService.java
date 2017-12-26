@@ -41,6 +41,11 @@ public interface IHandleService {
 	 */
 	public String getMsjwHandleTemplateId();
 	/**
+	 * 获取msjw六年免检url
+	 * @return
+	 */
+	public String getMsjwSixyearsUrl();
+	/**
 	 * 驾驶证年审
 	 * @param driverLicenseAnnualVerificationVo
 	 * @return
