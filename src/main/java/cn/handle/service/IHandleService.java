@@ -8,6 +8,7 @@ import cn.handle.bean.vo.ApplyCarTemporaryLicenceVo;
 import cn.handle.bean.vo.ApplyGatePassVo;
 import cn.handle.bean.vo.ApplyInspectionMarkVo;
 import cn.handle.bean.vo.ApplyRemoteEntrustedBusinessVo;
+import cn.handle.bean.vo.CarMortgageVo;
 import cn.handle.bean.vo.CreateVehicleInspectionVo;
 import cn.handle.bean.vo.DelegateVehiclesVo;
 import cn.handle.bean.vo.DriverChangeContactVo;
@@ -208,4 +209,16 @@ public interface IHandleService {
 	 * @throws Exception
 	 */
 	public BaseBean electronicDelegateVehicles(DelegateVehiclesVo delegateVehiclesVo)throws Exception;
+	/**
+	 * 申请或取消机动车抵押
+	 * @return
+	 * @throws Exception
+	 */
+	public BaseBean applyOrCancleCarMortgage(CarMortgageVo carMortgageVo)throws Exception;
+	/**
+	 * 查询机动车抵押
+	 * @return
+	 * @throws Exception
+	 */
+	public BaseBean queryCarMortgage(String loginUser,String sqlx,String sourceOfCertification)throws Exception;
 }
