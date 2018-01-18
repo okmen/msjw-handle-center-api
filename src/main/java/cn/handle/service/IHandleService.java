@@ -42,6 +42,11 @@ public interface IHandleService {
 	 */
 	public String getMsjwHandleTemplateId();
 	/**
+	 * 获取msjw机动车抵押登记域名地址
+	 * @return
+	 */
+	public String getMsjwCarMortgageUrl();
+	/**
 	 * 获取msjw六年免检url
 	 * @return
 	 */
