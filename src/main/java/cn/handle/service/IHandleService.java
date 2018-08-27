@@ -226,4 +226,14 @@ public interface IHandleService {
 	 * @throws Exception
 	 */
 	public BaseBean queryCarMortgage(String loginUser,String sqlx,String sourceOfCertification)throws Exception;
+	/**
+	 * 驾驶人信息单打印申请接口(编号 EZ1005)
+	 * @author max
+	 * @date:   2018年8月27日
+	 * @Desc :
+	 * @param param
+	 * @return
+	 * @throws Exception
+	 */
+	public Map<String, String> driverInformationSheetPrint(Map<String, String> param) throws Exception ;
 }
